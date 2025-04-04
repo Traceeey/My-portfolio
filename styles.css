@@ -1,0 +1,275 @@
+
+/*Body */
+body {
+   /* background-image: url('images/PROJ-BG.jpg');
+    background-size: cover; /* Makes the image cover the whole page 
+    background-position: center; /* Ensures the image is centered 
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-color: rgba(22, 0, 218, 0.31); /* Fallback color in case the image doesn't load */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    color: black; /* Adjust text color for readability on the background */
+    font-family: 'Arial', sans-serif;
+    font-size: 20px; /* Default font size */
+    line-height: 1.5; /* Default line height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center text */
+    height: 100vh; /* Full viewport height */
+    
+}
+
+
+/* Game Container */
+.game-container {
+    margin-top: 100px;
+}
+
+/* Menu Items */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.menu-item {
+    background: rgba(74, 3, 3, 0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid white;
+}
+
+.menu-item:hover {
+    background: rgb(9, 9, 9);
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+}
+
+.close-btn:hover {
+    color: darkred;
+}
+
+/* Game Board */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.game-board.hidden {
+    display: none;
+}
+.game-board.visible {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+.card.flipped {
+    background-color: #f0f0f0;
+    pointer-events: none;
+}
+.card.matched {
+    background-color: #4CAF50;
+    pointer-events: none;
+}
+
+/* Scoreboard */
+.scoreboard {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* Scoreboard Items */
+.scoreboard-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid white;
+}
+.scoreboard-item:hover {
+    background: gold;
+    color: black;
+    transform: scale(1.1);
+}
+/* Game Over Modal */
+.game-over-modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.game-over-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+.cv-link {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cv-link:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the Projects Section */
+#projects {
+    padding: 20px;
+    background-color: #3d0af526;
+    margin-top: 20px;
+}
+
+#projects h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: #0c08579b;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(5, 117, 230, 0.1);
+}
+
+.project h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project ul li {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+/* Navigation Styling */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color:pink;
+    padding: 10px 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Back Link */
+.back-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: #218838;
+}

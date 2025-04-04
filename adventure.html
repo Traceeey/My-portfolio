@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Welcome to the Adventure Quest!</h1>
+        <p>Your journey begins now. Choose your path:</p>
+
+        <div class="choice">
+            <button onclick="choosePath('left')">Take the Left Path 🚶‍♂️</button>
+            <button onclick="choosePath('right')">Take the Right Path 🚶‍♀️</button>
+        </div>
+
+        <div id="story-section">
+            <!-- Story will appear here based on choices -->
+        </div>
+        
+        <div id="scoreboard" class="scoreboard">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <script src="adventure.js"></script>
+</body>
+</html>
+<!-- 
+ -->

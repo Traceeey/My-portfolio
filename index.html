@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 Welcome to My Gamified Portfolio!</h1>
+        <p>Earn points, level up, and unlock badges as you explore:</p>
+
+        <div class="menu">
+            <div class="menu-item" onclick="startAdventure()">
+                <a href=adventure.html>🫶🏾 Start Adventure</a>
+            </div>
+            <div class="menu-item" onclick="viewProjects()" >
+                <a href="projects.html">💡 View Projects </a>
+            </div>
+            <div class="menu-item" onclick="contactMe()">
+               <a href="contact.html"> 📬 Contact Me </a>
+            </div>
+            <div class="menu-item">
+                <a href="Personal CV.docx"  download class="cv-link">📄 Download My CV</a>
+            </div>
+            <div class="menu-item">
+                <a href="interests.html">🌍 My Interests</a>
+            </div>
+        </div>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with a focus on creating interactive and dynamic websites. I have experience with front-end technologies like HTML, CSS, and JavaScript, and I am always looking to learn new things and grow in my field.</p>
+            <p>My mission is to bring ideas to life through code and design. I believe in creating clean, user-friendly web experiences that are both functional and beautiful.</p>
+            <p>Feel free to explore my projects and get in touch if you'd like to collaborate or just say hi!</p>
+
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>PORTFOLIO WEBSITE</h3>
+                    <p>A personal website that showcases my work, projects, and skills. Built with HTML, CSS, and JavaScript. 
+                        <br> It includes interactive features and responsive design.</p>
+                    <a href="https://github.com/Traceeey/portfolio" target="_blank">View on GitHub</a>
+                </li>
+                <li>
+                    <h3>PLP SOFTWARE ENGINEERING</h3>
+                    <p>I am also part of the February 2025 Cohort in PLP. 
+                        <br>It is of great honour that iget to improve my skill in software engineering, Web Development, and Database Management.</p>
+                   
+                </li>
+                <li>
+                    <h3>AWS CLOUD PRACTITIONER</h3>
+                    <p>I am a certified cloud practitioner from AWS. I managed to attain my badge on December, 2024.
+                        <br> Since then Ihave been practicing my skills by doing sub quests </p>
+                    
+                </li>
+            </ul>
+        </section>
+
+        
+
+        <div class="scoreboard">
+            <p>Your Points: <span id="playerPoints">0</span></p>
+            <p>Level: <span id="playerLevel">1</span></p>
+            <p>Badges: <span id="playerBadges">None</span></p>
+        </div>
+
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
